@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.ionesmile.cipherbox.ui.activity.DetailActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/toolbar_common_style"
+        app:navigationIcon="@mipmap/ic_arrow_back"
+        app:popupTheme="@style/ToolbarPopupTheme"
+        app:theme="@style/ToolbarTheme"
+        app:title="关于"
+        app:titleTextAppearance="@style/ToolbarTitleStyle" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:src="@mipmap/ic_launcher" />
+
+
+    <TextView
+        android:id="@+id/tv_version"
+        style="@style/text_cipher_content"
+        android:layout_gravity="center_horizontal"
+        android:text="v1.00" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/text_cipher_title"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/common_padding"
+            android:text="如何正确地使用密码本：" />
+
+        <TextView
+            style="@style/text_about_tip"
+            android:text="1，当前版本不推荐储存银行卡、支付密码和邮箱密码等重要信息" />
+
+        <TextView
+            style="@style/text_about_tip"
+            android:text="2，请即时备份，并妥善保管好导出的加密文件" />
+
+        <TextView
+            style="@style/text_about_tip"
+            android:text="3，欢迎你的加入，共同改善产品体验和密码安全" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layout_linear_cipher_show"
+        android:layout_marginBottom="@dimen/common_padding">
+
+        <TextView
+            style="@style/text_cipher_title"
+            android:text="源码地址：" />
+
+        <TextView
+            android:id="@+id/tv_url"
+            style="@style/text_cipher_content"
+            android:autoLink="web"
+            android:text="https://github.com/iOnesmile/PasswordNotebook"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+</LinearLayout>

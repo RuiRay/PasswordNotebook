@@ -1,0 +1,121 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- toolbar主题样式 -->
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <!-- menu中showAsAction设置为ifRoom和always的item项（即操作栏上）字体颜色 -->
+        <item name="actionMenuTextColor">@android:color/white</item>
+        <!-- menu中showAsAction设置为ifRoom和always的item项（即操作栏上）字体大小 -->
+        <item name="actionMenuTextAppearance">@style/ToolbarMenuTextSize</item>
+        <!-- 设置标题、menu中所有item字体颜色 -->
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <!-- 设置子标题字体颜色 -->
+        <item name="android:textColorSecondary">#99FFFFFF</item>
+        <item name="android:textColorHint">#99FFFFFF</item>
+    </style>
+
+    <!-- toolbar菜单中showAsAction为ifRoom的item项的文字尺寸 -->
+    <style name="ToolbarMenuTextSize" parent="@style/TextAppearance.AppCompat.Menu">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- toolbar标题字体样式 -->
+    <style name="ToolbarTitleStyle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- toolbar子标题字体样式 -->
+    <style name="ToolbarSubTitleStyle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#99FFFFFF</item>
+        <item name="android:ellipsize">middle</item>
+    </style>
+
+    <!-- toolbar弹出菜单样式 -->
+    <style name="ToolbarPopupTheme" parent="@style/ThemeOverlay.AppCompat">
+        <item name="android:colorBackground">#393A3F</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="layout_linear_cipher_show">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingRight">@dimen/common_padding</item>
+    </style>
+
+    <style name="text_cipher_title">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">right</item>
+        <item name="android:paddingRight">@dimen/common_padding</item>
+        <item name="android:textColor">#8E8E8E</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="text_cipher_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#212121</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginTop">@dimen/common_padding_small</item>
+        <item name="android:layout_marginBottom">@dimen/common_padding_small</item>
+        <item name="android:paddingTop">@dimen/common_padding_small</item>
+        <item name="android:paddingBottom">@dimen/common_padding_small</item>
+        <item name="android:paddingLeft">@dimen/common_padding_small</item>
+        <item name="android:paddingRight">@dimen/common_padding_small</item>
+        <item name="android:background">@drawable/selector_cipher_text_content_bg</item>
+    </style>
+
+    <style name="edit_cipher_content">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#212121</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_marginTop">@dimen/common_padding_small</item>
+        <item name="android:layout_marginBottom">@dimen/common_padding_small</item>
+        <item name="android:paddingTop">@dimen/common_padding_small</item>
+        <item name="android:paddingBottom">@dimen/common_padding_small</item>
+        <item name="android:paddingLeft">@dimen/common_padding_small</item>
+        <item name="android:paddingRight">@dimen/common_padding_small</item>
+        <item name="android:background">@drawable/shape_edit_cipher_content_bg</item>
+    </style>
+
+    <style name="image_cipher_icon">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginBottom">@dimen/common_padding_large</item>
+        <item name="android:layout_marginTop">@dimen/common_padding_large</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="toolbar_common_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:background">#393A3F</item>
+        <item name="android:theme">@style/ToolbarTheme</item>
+    </style>
+
+    <style name="text_about_tip">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/common_padding_small</item>
+        <item name="android:paddingLeft">@dimen/common_padding</item>
+        <item name="android:paddingRight">@dimen/common_padding</item>
+        <item name="android:textColor">#8E8E8E</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+</resources>

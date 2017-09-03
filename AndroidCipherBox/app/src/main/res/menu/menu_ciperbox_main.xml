@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_search"
+        android:title="搜索"
+        android:icon="@mipmap/ic_search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView" />
+    <item
+        android:id="@+id/action_add"
+        android:title="添加"
+        android:icon="@mipmap/ic_add"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_export"
+        android:title="导出"
+        android:icon="@mipmap/ic_import_export"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_setting"
+        android:title="设置"
+        android:icon="@mipmap/ic_settings"
+        app:showAsAction="never" />
+</menu>

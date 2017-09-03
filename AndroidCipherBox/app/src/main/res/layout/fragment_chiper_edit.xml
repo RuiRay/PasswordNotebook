@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_website_icon"
+        android:src="@mipmap/ic_launcher"
+        style="@style/image_cipher_icon" />
+
+    <LinearLayout style="@style/layout_linear_cipher_show">
+
+        <TextView
+            style="@style/text_cipher_title"
+            android:text="网站名：" />
+
+        <EditText
+            android:id="@+id/et_website"
+            style="@style/edit_cipher_content"
+            android:text="iOnesmile" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/layout_linear_cipher_show">
+
+        <TextView
+            style="@style/text_cipher_title"
+            android:text="用户名：" />
+
+        <EditText
+            android:id="@+id/et_username"
+            style="@style/edit_cipher_content"
+            android:text="iOnesmile" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/layout_linear_cipher_show">
+
+        <TextView
+            style="@style/text_cipher_title"
+            android:text="密码：" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:inputType="textPassword"
+            style="@style/edit_cipher_content"
+            android:text="aaaaaaaaaaaaaa" />
+
+        <CheckBox
+            android:id="@+id/cb_password_visible"
+            android:layout_width="wrap_content"
+            android:background="@null"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/common_padding"
+            android:button="@drawable/selector_password_visible"
+            android:paddingTop="@dimen/common_padding"
+            android:paddingBottom="@dimen/common_padding"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/layout_linear_cipher_show">
+
+        <TextView
+            style="@style/text_cipher_title"
+            android:text="URL：" />
+
+        <EditText
+            android:id="@+id/et_url"
+            style="@style/edit_cipher_content"
+            android:text="www.iOnesmile.com" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/layout_linear_cipher_show">
+
+        <TextView
+            style="@style/text_cipher_title"
+            android:text="类型：" />
+
+        <TextView
+            android:id="@+id/tv_type"
+            style="@style/text_cipher_content"
+            android:text="Study" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/layout_linear_cipher_show">
+
+        <TextView
+            style="@style/text_cipher_title"
+            android:text="安全等级：" />
+
+
+        <com.iarcuschin.simpleratingbar.SimpleRatingBar
+            android:id="@+id/ratingBar_secure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/common_padding_small"
+            android:layout_marginTop="@dimen/common_padding_small"
+            app:srb_borderColor="#2296CF"
+            app:srb_fillColor="#2296CF"
+            app:srb_numberOfStars="5"
+            app:srb_rating="3"
+            app:srb_starBorderWidth="@integer/rating_bar_start_border_width"
+            app:srb_starSize="25dp"
+            app:srb_stepSize="0.5" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/layout_linear_cipher_show">
+
+        <TextView
+            style="@style/text_cipher_title"
+            android:text="备注：" />
+
+        <EditText
+            android:id="@+id/et_remark"
+            style="@style/edit_cipher_content"
+            android:maxLines="5"
+            android:gravity="left|top"
+            android:singleLine="false"
+            android:scrollbars="vertical"
+            android:text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" />
+
+    </LinearLayout>
+
+</LinearLayout>

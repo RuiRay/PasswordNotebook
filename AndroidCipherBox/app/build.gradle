@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+apply plugin: 'realm-android'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.2"
+    defaultConfig {
+        applicationId "com.ionesmile.cipherbox"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 100
+        versionName "1.00"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    defaultConfig {
+        multiDexEnabled true
+        ndk {
+            // 减小 APK 尺寸
+            abiFilters "armeabi-v7a"//, "armeabi-v7a", "x86", "mips"
+        }
+    }
+
+    sourceSets{
+        main.java.srcDirs+='src/main/kotlin'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.2.0'
+    compile 'com.android.support:recyclerview-v7:24.2.0'
+    compile 'ru.bartwell:exfilepicker:1.8'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.+'
+    compile('com.yanzhenjie:recyclerview-swipe:1.0.3') {
+        exclude group: 'com.android.support', module: 'recyclerview-v7'
+    }
+    compile 'com.iarcuschin:simpleratingbar:0.1.5'
+
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    compile "org.jetbrains.kotlin:kotlin-reflect:${kotlin_version}"
+    compile 'org.jetbrains.anko:anko-sdk25:0.10.0-beta-1'
+    // sdk15, sdk19, sdk21, sdk23 are also available
+    compile 'org.jetbrains.anko:anko-appcompat-v7:0.10.0-beta-1'
+    compile project(':lockpattern')
+}

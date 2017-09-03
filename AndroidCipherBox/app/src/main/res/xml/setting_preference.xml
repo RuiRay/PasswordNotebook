@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:dialogTitle="修改密码"
+        android:inputType="number"
+        android:key="edit_password_pref"
+        android:summary="******"
+        android:title="锁屏密码（九宫格位置，同输入法）" />
+
+    <ListPreference
+        android:defaultValue="1"
+        android:dialogTitle="显示内容"
+        android:summary="创建时间"
+        android:entries="@array/preference_list_show_options"
+        android:entryValues="@array/preference_list_show_values"
+        android:key="list_show_options"
+        android:title="列表右上角显示内容" />
+
+    <SwitchPreference
+        android:key="switch_lock_track"
+        android:checked="true"
+        android:title="锁屏图案可见"/>
+
+    <Preference
+        android:key="item_clear_all"
+        android:title="删除所有记录" />
+
+    <Preference
+        android:key="item_about"
+        android:title="关于" />
+
+</PreferenceScreen>
