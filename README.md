@@ -1,6 +1,6 @@
 #### 一、项目截图
 
-博客地址：<http://www.ionesmile.com/android/cipherbox>
+博客地址：<http://ruiray.com/?p=19>
 
 **Android 安装包**：  [百度云下载](http://pan.baidu.com/s/1jIDYHds)
 
